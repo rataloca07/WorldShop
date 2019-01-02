@@ -1,0 +1,679 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/11/2018, 12:06:28 AM
+    Author     : anthony
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #1d1d1d ;
+}
+@font-face {
+    font-family: 'poppy';
+    src: url('https://fonts.googleapis.com/css?family=Poppins');
+}
+
+header section aside footer article{
+    display: block;
+}
+
+section{
+    overflow: hidden;
+}
+
+
+
+header{
+    width: 100%;
+    align-content: center;
+    height: 100px;
+    background-color: white;
+    font-family: Poppins, sans-serif;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 15px #e1e1e1;  
+    
+}
+.menus-principal{
+     text-decoration: none;
+     list-style: none;
+}
+
+#logo{
+    width: 15%;
+   display: block;
+    float: left;
+    /*margin-right:50px;*/
+    margin-left: 10%;
+    margin-top: 30px ;
+    font-size: 24px;
+    font-weight: 900;
+  
+} 
+#logo a{
+    color:#1d1d1d ;
+    font-weight: bold;
+}
+#logo a span{
+    color: #f23e35 ;
+    font-weight: bold;
+  
+}
+
+/*#menu-principal{
+   float: left;
+    margin-top: 40px ;
+    margin-left: 120px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+}
+#menu-principal ul li{
+    display: inline ;
+    margin: auto 20px;
+    
+    
+}
+
+.menus-principal{
+    margin-top: 30px;
+}
+.menus-principal:hover{
+    color:  #8d8d8d ;
+    transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: color;
+}*/
+
+#menu-principal{
+
+   width: 75%;
+   font-family: "Poppins", sans-serif;
+    float: left;
+    margin-top: 30px ;
+   /* margin-left: 15%;*/
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+
+}
+
+
+#menu-principal ul {
+    list-style: none;
+    background-color: white;
+    /*text-align: center;*/
+    margin: 0 auto;
+    display: table;
+
+}
+
+
+#menu-principal > ul li a{
+    background-color: white;
+    color:#1d1d1d ;
+   font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    box-sizing: border-box;
+
+}
+#menu-principal ul li ul li{
+    width: 100%;
+}
+#menu-principal ul li ul li:nth-child('last'){
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#menu-principal ul >li {
+   display: inline ;
+    margin: auto;
+    float: left;
+}
+
+#menu-principal ul >li:hover >a {
+   color:  #8d8d8d ;
+    transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: color;
+}
+
+#menu-principal ul li ul li a{
+width: 100%;
+    text-align: center;
+    border-top: solid 1px #dadada ;
+    box-sizing: border-box;
+}
+
+#menu-principal ul li ul li a:hover{
+    border-top: solid 1px #dadada ;
+    box-sizing: border-box;
+    /*box-shadow: rgb(150,150,150) 5px 5px 10px inset;*/
+    box-shadow: #dadada 1px 1px 12px inset;
+}
+
+
+
+#menu-principal li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+#menu-principal ul li:hover>ul{
+    display: block;
+}
+
+/*Esto hace desaparecer opciones
+en el menu de navegacion*/
+#menu-principal > ul li.a{
+    display: none;
+}
+
+#menu-principal > ul li.asesion > a span{
+    color:rgb(254, 76, 80);
+    font-size: 14px;
+}
+
+#menu-principal > ul li.asesion > a i{
+    color:rgb(254, 76, 80);
+    font-size: 14px;
+}
+
+#menu-principal > ul li.asesion > a i span{
+    color:rgb(254, 76, 80);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#menu-principal > ul li.asesion > a i:hover{
+    color:#f99181;
+}
+
+#menu-principal > ul li.asesion > a i:hover span{
+    color:#f99181;
+}
+
+
+#menu-principal > ul li.nosesion{
+    display: none;
+}
+
+
+#banner{
+   width: 100%;
+}
+#temporada-fondo{
+ overflow: hidden;
+   width: 100%;
+   height: 700px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#temporada{
+     margin-left: 120px;
+     margin-top: 215px;
+}
+
+#temporada-nombre{
+font-family:  Helvetica, Arial, sans-serif;
+box-sizing: border-box;
+color: #272727;
+ margin-top: 0px;
+ text-align: left;
+ margin-left: 0px;
+font-size: 14px;
+font-weight: 500;
+line-height: 16.8px;
+
+}
+
+#temporada-descuento{
+ font-family:  Helvetica, Arial, sans-serif;
+ letter-spacing: 2px;
+ margin-left: 0px;
+ text-align: left;
+ margin-top: 30px;
+ color: #272727; 
+ width: 600px;
+ height: 100px;
+font-size: 72px;
+font-weight: 500;
+line-height: 72px;
+
+margin-bottom: 8px;
+
+}
+
+#boton-temporada{
+display: block;
+margin-top: 85px;
+margin-left: 0px;
+color: white;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 14px;
+border: none;
+ width: 140px;
+ height: 40px;
+ background-color: #fe4c50;
+ border-radius: 3px;
+padding: 7px;
+
+}
+#boton-temporada:hover{
+    color:#686767;
+    background-color: #e78782 ;
+    cursor: pointer;
+    
+}
+
+#categorias-fondo{
+    width: 100%;
+    padding: 30px 0px;
+    overflow: hidden;
+}
+#categorias-contenedor{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
+
+.categorias-paneles{
+    width: 31%;
+    background-repeat: no-repeat;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 265px;
+    background-size: cover;
+    background-position: 50% 50%;
+    float: left;
+    display: flex;
+    
+}
+#categorias-fondo #categorias-contenedor .categorias-paneles:nth-child(2){
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+.boton-categoria{
+   display:block;
+    width: 190px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    /* el margen vertical gracias al flexbox
+    en contenedor padre*/
+   margin: auto auto;
+    border: none;
+    font-size: 22px;
+    border-radius: 6px;
+    /*font-style: bold; */
+}
+.boton-categoria:hover{
+    color: #c3c3c3;
+    cursor: pointer;
+    transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: color;
+}
+
+#modelos-fondo > div{
+    font-family: "Poppins", sans-serif;
+    color: rgb(40, 40, 40);
+    margin-top: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#modelos-fondo div:last-child{
+    width: 60px;
+    border-bottom: 5px solid #f23e35;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#modelos-menu-fondo{
+    width: 100%;
+    padding-bottom: 50px;
+    overflow: hidden;
+    
+}
+.modelos-menu-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+
+.modelos-menu-botones .modelos-boton-enlace{
+    background-color: white;
+    text-decoration: none;
+    width: 100px;
+    padding: 8px;
+    border: solid #dadada 0.2px;
+    border-radius: 3px;
+}
+.modelos-menu-botones #seleccionado{
+    background-color: rgb(254, 76, 80);
+}
+.modelos-menu-botones #seleccionado:hover{
+    background-color:  #fe9090 ;
+    cursor: pointer;
+    
+}
+
+
+
+.modelos-menu-botones #seleccionado div{
+    color:white;
+}
+
+
+
+.modelos-menu-botones button div{
+    font-family: "Poppins", sans-serif;
+    color: rgb(40, 40, 40);
+    text-align: center; 
+}
+
+.modelos-nuevos-contenedor {
+    font-family: "Poppins", sans-serif;
+    
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+/*Para mostrar diferentes categorías*/
+#inactivo{
+display: none;
+}
+
+
+
+
+
+.modelos-nuevos{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    
+}
+
+
+/*#marco puede borrarse*/
+#marco{
+    display: block;
+    width: 235px;
+    height: 235px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.modelos-nuevos img{
+    width: 100%;
+   /* display: block;
+    margin: 10px auto;*/
+    /*width: 80%;*/
+    /*width: 235px;
+    height: 235px;*/
+}
+/*
+Quitar el div #marco
+.modelos-nuevos img{
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+   width: 235px;
+    height: 235px;
+}
+*/
+
+
+
+.modelos-nuevos p{
+    text-align: center;
+    margin-bottom: 10px; 
+}
+.modelos-nuevos .nombre-producto-nuevo{
+    font-weight: 500;
+}
+
+.modelos-nuevos .precio-producto-nuevo{
+    color: #f23e35;
+}
+
+/*.modelos-nuevos .agregar{
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+.modelos-nuevos a.agregar{
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #f23e35;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.modelos-nuevos:hover a.agregar{
+    visibility: visible;  
+}
+.modelos-nuevos a.agregar:hover{
+    background-color: #f08686;
+
+}*/
+
+.modelos-nuevos a{
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #f23e35;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    visibility: hidden;
+    display: none;
+}
+/*.modelos-nuevos a{
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #f23e35;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    visibility: hidden;
+}*/
+
+.modelos-nuevos:hover a{
+    visibility: visible;  
+}
+.modelos-nuevos a:hover{
+    background-color: #f08686;
+
+}
+.modelos-nuevos:hover{
+      box-shadow: -2px -2px 10px #888888;   
+      cursor: pointer;
+}
+
+/* De esto depende si el boton
+agregar al carrito se muestra*/
+.modelos-nuevos .producto + .agregar{
+    display: block;
+}
+
+
+
+
+article #oferta-semana{
+    background-color: rgb(242, 242, 242);
+    overflow: hidden;
+}
+#contenedor-imagen-oferta{
+    margin-left: 12%;
+    width: 28%;
+    float: left;
+}
+#oferta-semana img{
+    width: 100%;
+}
+
+
+#contenedor-tiempo-oferta{
+    float: left;
+    width: 50%;
+    margin-left: 10%;;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: rgb(40, 40, 40);
+}
+#nombre-oferta-semana{
+    width: 100%;
+    font-size: 40px;
+}
+#barrita{
+    width: 8%;
+    margin-left: 46%;
+    margin-right: 46%;
+    border-bottom: 6px solid #f23e35;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#reloj{
+    background-color: blue;
+    
+}
+.numeros-contenedor{
+    float: left;
+    width: 20%;
+    height:0;
+    padding-bottom: 20%;
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 3%; 
+}
+
+.contenedor-num{
+    margin-top: 20px;
+    
+    
+}
+
+div#reloj div.numeros-contenedor:first-child{
+    margin-left: 5.5%;
+}
+div#reloj div.numeros-contenedor:last-child{
+    margin-right: 5.5%;
+}
+.numeros{
+    font-size: 48px;
+    font-weight: bold;
+    color:#fe4c50;
+    margin-bottom: 0px;
+}
+.unidades{
+    color:  rgb(40, 40, 40);
+   /* margin-top: 0px;*/
+}
+#boton-oferta{
+ margin-top: 50px; 
+margin-right: auto;
+margin-left: auto;
+color: white;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 14px;
+border: none;
+ width: 140px;
+ height: 40px;
+ background-color: #fe4c50;
+ border-radius: 3px;
+padding: 7px;
+}
+
+#boton-oferta:hover{
+    background-color: #e78782 ;
+    cursor: pointer;
+    
+}
+#contenedor-tiempo-oferta > div{
+    margin-top: 150px;
+    
+}
+footer{
+    overflow: hidden;
+    
+    
+}
+#footer-contenedor{
+    background-color: black;
+    height: 260px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color:  white ;
+    overflow: hidden;
+}
+
+.footer-enlaces a{
+    text-decoration: none;
+    color:#51545f;
+}
+#derechos p{
+    color:#51545f;
+}
+#footer-izq, #footer-der{
+    float: left;
+}
+#footer-izq{
+    width: 31%;
+    margin-left: 9%;
+    margin-top: 55px;
+
+}
+#contacto{
+        margin-bottom: 50px;
+}
+.footer-enlaces a{
+
+    margin-right: 30px;
+}
+#footer-der{
+    width: 60%;
+    overflow: hidden;
+}
+#redes{
+    display: block;
+    margin-top: 55px;
+    
+    margin-left: 60%;
+}
+.footer-enlaces a:hover i,#contacto a:hover{
+    cursor: pointer;
+    color: #fe4c50;
+}
+.footer-enlaces a i{
+    height: 35px;
+    color:#51545f;
+
+}
+

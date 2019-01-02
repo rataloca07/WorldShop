@@ -1,0 +1,388 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/12/2018, 09:14:14 PM
+    Author     : anthony
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #1d1d1d ;
+}
+@font-face {
+    font-family: 'poppy';
+    src: url('https://fonts.googleapis.com/css?family=Poppins');
+}
+
+header section aside footer article{
+    display: block;
+}
+body{
+    font-family: "Poppins";
+    color:rgb(40, 40, 40);
+}
+
+section{
+    overflow: hidden;
+}
+
+
+
+header{
+    width: 100%;
+    align-content: center;
+    height: 100px;
+    background-color: white;
+    font-family: Poppins, sans-serif;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 15px #e1e1e1;  
+    
+}
+.menus-principal{
+     text-decoration: none;
+     list-style: none;
+}
+
+#logo{
+    width: 15%;
+   display: block;
+    float: left;
+    /*margin-right:50px;*/
+    margin-left: 10%;
+    margin-top: 30px ;
+    font-size: 24px;
+    font-weight: 900;
+  
+} 
+#logo a{
+    color:#1d1d1d ;
+    font-weight: bold;
+}
+#logo a span{
+    color: #f23e35 ;
+    font-weight: bold;
+    
+    
+}
+
+#menu-principal{
+
+   width: 75%;
+   font-family: "Poppins", sans-serif;
+    float: left;
+    margin-top: 30px ;
+   /* margin-left: 15%;*/
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+
+}
+
+
+#menu-principal ul {
+    list-style: none;
+    background-color: white;
+    /*text-align: center;*/
+    margin: 0 auto;
+    display: table;
+
+}
+
+
+#menu-principal > ul li a{
+    background-color: white;
+    color:#1d1d1d ;
+   font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    box-sizing: border-box;
+
+}
+#menu-principal ul li ul li{
+    width: 100%;
+}
+#menu-principal ul li ul li:nth-child('last'){
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#menu-principal ul >li {
+   display: inline ;
+    margin: auto;
+    float: left;
+}
+
+#menu-principal ul >li:hover >a {
+   color:  #8d8d8d ;
+    transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: color;
+}
+
+#menu-principal ul li ul li a{
+width: 100%;
+    text-align: center;
+    border-top: solid 1px #dadada ;
+    box-sizing: border-box;
+}
+
+#menu-principal ul li ul li a:hover{
+    border-top: solid 1px #dadada ;
+    box-sizing: border-box;
+    /*box-shadow: rgb(150,150,150) 5px 5px 10px inset;*/
+    box-shadow: #dadada 1px 1px 12px inset;
+}
+
+
+
+#menu-principal li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+#menu-principal ul li:hover>ul{
+    display: block;
+}
+
+/*Esto hace desaparecer opciones
+en el menu de navegacion*/
+#menu-principal > ul li.a{
+    display: none;
+}
+
+#menu-principal > ul li.asesion > a span{
+    color:rgb(254, 76, 80);
+    font-size: 14px;
+}
+
+#menu-principal > ul li.asesion > a i{
+    color:rgb(254, 76, 80);
+    font-size: 14px;
+}
+
+#menu-principal > ul li.asesion > a i span{
+    color:rgb(254, 76, 80);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#menu-principal > ul li.asesion > a i:hover{
+    color:#f99181;
+}
+
+#menu-principal > ul li.asesion > a i:hover span{
+    color:#f99181;
+}
+
+
+#menu-principal > ul li.nosesion{
+    display: none;
+}
+
+
+
+section{
+    width: 100%;
+}
+article{
+    width: 100%;
+}
+
+#contenedor-agregar-carrito{
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 70%;
+    /*border: 2.5px solid black;*/
+     border: 2.5px solid #585757 ;
+    border-radius: 8px;
+    background-color: rgb(242, 242, 242);
+    margin: 20px auto;
+    
+}
+
+#contenedor-imagen-carrito{
+    margin: auto auto;
+    width: 50%; 
+    float: left;
+}
+
+#marco-imagen-carrito{
+    display: block;
+    width: 330px;
+    height: 330px;
+    margin: auto auto;
+    overflow:hidden;
+}
+
+#marco-imagen-carrito img{
+    width: 100%;
+}
+
+
+
+
+#marco-detalles-carrito{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+
+form{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#nombre{
+    font-size: 30px;
+   /* margin-top: 15px;*/
+    margin-bottom:8px;
+    padding-bottom: 12px;
+    border-bottom: solid 1px #cfcfcf ;
+    font-weight: bold;
+}
+#descripcion{
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 22px;
+}
+#descripcion-dato{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+#precio{
+    font-size: 28px;
+    color:rgb(254, 76, 80);
+    margin-bottom: 15px;
+}
+
+#cantidad{
+    font-size: 20px;
+}
+
+#cantidad input{
+    font-family: "Poppins";
+    color:rgb(40, 40, 40);
+    border: solid 0.5px #e8e8e8;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+form button{
+    
+    background-color: rgb(254, 76, 80);
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form button:hover{
+    background-color:#fe8b8b ;
+    cursor: pointer;
+}
+
+#marco-detalles-carrito form button span{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: white;
+}
+
+form a{
+    
+    background-color: rgb(254, 76, 80);
+    margin-left: 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form a:hover{
+    background-color:#fe8b8b ;
+    cursor: pointer;
+}
+
+#marco-detalles-carrito form a span{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: white;
+}
+
+
+
+footer{
+    overflow: hidden;
+    
+    
+}
+#footer-contenedor{
+    background-color: black;
+    height: 260px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color:  white ;
+    overflow: hidden;
+}
+
+.footer-enlaces a{
+    text-decoration: none;
+    color:#51545f;
+}
+#derechos p{
+    color:#51545f;
+}
+#footer-izq, #footer-der{
+    float: left;
+}
+#footer-izq{
+    width: 31%;
+    margin-left: 9%;
+    margin-top: 55px;
+
+}
+#contacto{
+        margin-bottom: 50px;
+}
+.footer-enlaces a{
+
+    margin-right: 30px;
+}
+#footer-der{
+    width: 60%;
+    overflow: hidden;
+}
+#redes{
+    display: block;
+    margin-top: 55px;
+    
+    margin-left: 60%;
+}
+.footer-enlaces a:hover i,#contacto a:hover{
+    cursor: pointer;
+    color: #fe4c50;
+}
+.footer-enlaces a i{
+    height: 35px;
+    color:#51545f;
+
+}
+

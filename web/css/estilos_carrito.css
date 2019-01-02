@@ -1,0 +1,599 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/12/2018, 04:57:25 PM
+    Author     : anthony
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #1d1d1d ;
+}
+@font-face {
+    font-family: 'poppy';
+    src: url('https://fonts.googleapis.com/css?family=Poppins');
+}
+
+header section aside footer article{
+    display: block;
+}
+body{
+    font-family: "Poppins";
+    color:rgb(40, 40, 40);
+}
+
+section{
+    overflow: hidden;
+}
+
+
+
+header{
+    width: 100%;
+    align-content: center;
+    height: 100px;
+    background-color: white;
+    font-family: Poppins, sans-serif;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 15px #e1e1e1;  
+    
+}
+.menus-principal{
+     text-decoration: none;
+     list-style: none;
+}
+
+#logo{
+    width: 15%;
+   display: block;
+    float: left;
+    /*margin-right:50px;*/
+    margin-left: 10%;
+    margin-top: 30px ;
+    font-size: 24px;
+    font-weight: 900;
+  
+} 
+#logo a{
+    color:#1d1d1d ;
+    font-weight: bold;
+}
+#logo a span{
+    color: #f23e35 ;
+    font-weight: bold;
+    
+    
+}
+
+#menu-principal{
+
+   width: 75%;
+   font-family: "Poppins", sans-serif;
+    float: left;
+    margin-top: 30px ;
+   /* margin-left: 15%;*/
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+
+}
+
+
+#menu-principal ul {
+    list-style: none;
+    background-color: white;
+    /*text-align: center;*/
+    margin: 0 auto;
+    display: table;
+
+}
+
+
+#menu-principal > ul li a{
+    background-color: white;
+    color:#1d1d1d ;
+   font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    box-sizing: border-box;
+
+}
+#menu-principal ul li ul li{
+    width: 100%;
+}
+#menu-principal ul li ul li:nth-child('last'){
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#menu-principal ul >li {
+   display: inline ;
+    margin: auto;
+    float: left;
+}
+
+#menu-principal ul >li:hover >a {
+   color:  #8d8d8d ;
+    transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: color;
+}
+
+#menu-principal ul li ul li a{
+width: 100%;
+    text-align: center;
+    border-top: solid 1px #dadada ;
+    box-sizing: border-box;
+}
+
+#menu-principal ul li ul li a:hover{
+    border-top: solid 1px #dadada ;
+    box-sizing: border-box;
+    /*box-shadow: rgb(150,150,150) 5px 5px 10px inset;*/
+    box-shadow: #dadada 1px 1px 12px inset;
+}
+
+
+
+#menu-principal li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+#menu-principal ul li:hover>ul{
+    display: block;
+}
+
+/*Esto hace desaparecer opciones
+en el menu de navegacion*/
+#menu-principal > ul li.a{
+    display: none;
+}
+
+#menu-principal > ul li.asesion > a span{
+    color:rgb(254, 76, 80);
+    font-size: 14px;
+}
+
+#menu-principal > ul li.asesion > a i{
+    color:rgb(254, 76, 80);
+    font-size: 14px;
+}
+
+#menu-principal > ul li.asesion > a i span{
+    color:rgb(254, 76, 80);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#menu-principal > ul li.asesion > a i:hover{
+    color:#f99181;
+}
+
+#menu-principal > ul li.asesion > a i:hover span{
+    color:#f99181;
+}
+
+
+#menu-principal > ul li.nosesion{
+    display: none;
+}
+
+
+
+section{
+    width: 100%;
+    background-color:  #f0f4e8 ;
+}
+article{
+    width: 100%;
+    min-height: 237px;
+}
+
+/*#contenedor-listado-carrito{
+    width: 95%;
+    background-color: #ecfae3;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cabecera, #cuerpo{
+    width: 100%;
+ 
+}
+#cabecera div{
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    background-color: blue;
+    height: 50px;
+}
+#cuerpo div{
+   
+    height: 100px;
+}
+
+#cabecera .item{
+    width: 10%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#cabecera .imagen{
+    width: 30%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#cabecera .nombre{
+    width: 20%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#cabecera .precio{
+    width: 20%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#cabecera .cantidad{
+    width: 20%;
+    margin-left: 0px;
+    margin-right: 0px;
+}*/
+article table{
+    overflow: hidden;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+}
+
+article table #cabecera-tabla{
+    
+    
+}
+article table td{
+    border-top: 1px solid black;
+    box-sizing: border-box;
+}
+table{
+    margin-top: 35px;
+    margin-bottom: 35px;
+   border: solid 1px black;
+   border-radius: 15px;
+   /*border-collapse: collapse;*/
+   border-spacing: 0px;
+    
+    box-sizing: border-box;
+}
+
+article table .item{
+    width: 5%;
+}
+article table .imagen{
+    width: 25%;
+    overflow: hidden;
+}
+
+tr .c{
+    height: 200px;
+}
+
+tr .h{
+    background-color:  rgb(254, 76, 80) ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+tr#cabecera-tabla td:first-child{
+    border-top-left-radius: 15px;
+}
+tr#cabecera-tabla td:last-child{
+    border-top-right-radius: 15px;
+}
+
+article table .imagen div{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+article table .nombre{
+    width: 20%;
+}
+article table .precio{
+    width: 10%;
+}
+article table .cantidad{
+    width: 10%;
+}
+
+article table .acciones{
+    width: 30%;
+}
+
+/*article table .botones_acciones{
+    width: 30%;
+}*/
+article table .acciones a {
+    width: 30%;
+    padding: 7px 5px;
+    border-radius: 5px;
+    color: white;
+    font-family: "Poppins";
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+article table .acciones a:hover{
+cursor: pointer;    
+}
+
+article table .acciones a:first-child {
+    /*WARNING amarillo*/
+    margin-left: 10%;
+    margin-right: 5%;
+  /* background-color: rgb(255, 193, 7) ;*/
+    background-color: #f4c430;
+
+}
+article table .acciones a:last-child {
+    /*DANGER ROJO*/
+ background-color:  rgb(220, 53, 69);
+ margin-left: 5%;
+ margin-right: 10%;
+}
+
+article table .acciones a:first-child:hover{
+    background-color:   #fee491;
+
+}
+
+article table .acciones a:last-child:hover{
+    background-color:  #fc8c7c;
+}
+.acciones .c .ocultar{
+    display: none;
+}
+
+
+/*VENTANA MODAL*/
+.respuesta{
+
+    position: absolute;
+    display: none;
+    /*display: flex;*/
+    align-content: center;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+   /* height: 705px;*/
+}
+
+.respuesta-contenido{
+    margin: auto;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+   /* margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;*/
+    background-color: rgba(255,255,255,0.9);
+    width: 700px;
+    border-radius: 20px;
+    padding: 25px;
+    color: black;
+    
+}
+#imagen-fondo{
+    display: flex;
+    float: left;
+    margin: auto;
+    height: 320px;
+    width: 50%;
+    font-size: 100px;
+    
+   
+    /*overflow: hidden;*/
+}
+#imagen-fondo div{
+    border-radius: 10px;
+    width: 80%;
+    height: 90%;
+   /* background-color: #c3eba7  ;*/
+   background-size: cover;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+    margin: auto;
+}
+
+.respuesta .respuesta-contenido div{
+    font-family: "Poppins";
+    
+}
+
+.respuesta .respuesta-contenido div:not(:first-child){
+    width: 50%;
+    float: left;
+}
+
+.respuesta #nombre-producto{
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid   #dcdbdb;
+    text-align: center;
+   /* background-color: red;*/
+    /*font-family: "Poppins";*/
+    font-size: 30px;
+    font-weight: bold;
+}
+.respuesta #descripcion-producto{
+    margin-top: 10px;
+    text-align: left;
+    /*font-family: "Poppins";*/
+    font-size: 23px;
+    font-weight: bold;
+}
+.respuesta #descripcion-producto-contenido{
+    margin-top: 10px;
+    text-align: left;
+    /*display: block;*/
+    
+    font-size: 18px;
+    /*font-weight: bold;*/
+}
+
+.respuesta .respuesta-contenido p{
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    /*display: block;*/
+    /*width: 50%;*/
+    /*background-color: red;*/
+    /*text-align: left;*/
+    
+    font-size: 20px;
+    /*font-weight: bold;*/
+}
+
+
+.respuesta .respuesta-contenido p span{
+    width: 15%;
+    margin-right: 5%;
+}
+.respuesta .respuesta-contenido p input{
+    width: 25%;
+    font-family: "Poppins";
+    font-size: 20px;
+    padding: 3px;
+    border: 0.2 solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.respuesta-contenido button{
+    /*clear: both;*/
+    /*display: block;*/
+    display: inline-block;
+    border:none;
+    width: 21%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(254, 76, 80);
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding: 14px 7px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.respuesta-contenido button:first-child{
+    overflow: hidden;
+    margin-left: 8%;
+    margin-right: 2%;
+}
+
+.respuesta-contenido button:last-child{
+    margin-left: 2%;
+    margin-right: 5%;
+}
+
+
+.respuesta-contenido button:hover{
+    background-color:#fe8b8b ;
+    cursor: pointer;
+}
+
+.respuesta-contenido #regresar span, .respuesta-contenido #guardar span{
+    font-family: "Poppins";
+    font-size: 17px;
+    color: white;
+}
+
+
+/*#mostrar{
+    display: flex;
+}*/
+
+
+
+
+
+
+
+
+footer{
+    overflow: hidden;
+    
+    
+}
+#footer-contenedor{
+    background-color: black;
+    height: 260px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color:  white ;
+    overflow: hidden;
+}
+
+.footer-enlaces a{
+    text-decoration: none;
+    color:#51545f;
+}
+#derechos p{
+    color:#51545f;
+}
+#footer-izq, #footer-der{
+    float: left;
+}
+#footer-izq{
+    width: 31%;
+    margin-left: 9%;
+    margin-top: 55px;
+
+}
+#contacto{
+        margin-bottom: 50px;
+}
+.footer-enlaces a{
+
+    margin-right: 30px;
+}
+#footer-der{
+    width: 60%;
+    overflow: hidden;
+}
+#redes{
+    display: block;
+    margin-top: 55px;
+    
+    margin-left: 60%;
+}
+.footer-enlaces a:hover i,#contacto a:hover{
+    cursor: pointer;
+    color: #fe4c50;
+}
+.footer-enlaces a i{
+    height: 35px;
+    color:#51545f;
+
+}
+

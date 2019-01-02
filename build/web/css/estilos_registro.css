@@ -1,0 +1,270 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/12/2018, 10:45:04 AM
+    Author     : anthony
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #1d1d1d ;
+}
+@font-face {
+    font-family: 'poppy';
+    src: url('https://fonts.googleapis.com/css?family=Poppins');
+}
+
+header section aside footer article{
+    display: block;
+}
+/*body{
+    font-family: "Poppins";
+    color:rgb(40, 40, 40);
+}*/
+body{
+    /* overflow: hidden;
+     display: block;*/
+}
+
+section{
+    width: 100%;
+    /* height: 100vh;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*display: flex;*/
+
+    overflow: hidden;
+}
+.fondo-formulario{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+    /* height: 500px;*/
+    box-sizing: border-box;
+    background-color: rgba(41, 41, 41,0.6); 
+}
+
+.fondo-formulario #registro{
+    text-align: center;
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    /*border: solid 0.5 rgba( 4, 4, 4 ,0.8);*/
+    /*border-bottom: solid 1px #cfcfcf;*/
+    color: white;
+    margin-left:auto;
+    margin-right:auto;
+    box-sizing: border-box;
+}
+
+.marco-logo{
+    width: 35%;
+    border-radius: 50% 50%;
+    margin: 5px auto;
+}
+.marco-logo img{
+    width: 100%;
+}
+
+.fondo-formulario #nombre-empresa {
+    text-align: center;
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    /*border: solid 0.5 rgba( 4, 4, 4 ,0.8);*/
+    border-bottom: solid 1px #cfcfcf;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+}
+
+.fondo-formulario form .campo{
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    /*border: solid 0.5 rgba( 4, 4, 4 ,0.8);*/
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgba( 4, 4, 4 ,0.6);
+    box-sizing: border-box;
+}
+form button{
+
+    background-color: rgb(254, 76, 80);
+    margin-left: 5%;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form button:hover{
+    background-color:#fe8b8b ;
+    cursor: pointer;
+}
+
+.fondo-formulario form button span{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: white;
+}
+
+form a:not(#registrar){
+
+    background-color: rgb(254, 76, 80);
+    margin-left: 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form a:hover:not(#registrar){
+    background-color:#fe8b8b ;
+    cursor: pointer;
+}
+
+.fondo-formulario form a span{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: white;
+}
+
+.fondo-formulario form #contenedor-botones{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 20px;
+    display: block;
+    /* background-color: red;*/
+    align-content: center;
+}
+
+
+
+.respuesta{
+
+    position: absolute;
+    display: none;
+    align-content: center;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    height: 705px;
+}
+
+.respuesta-contenido{
+    margin: auto;
+    background-color: rgba(255,255,255,0.9);
+    width: 350px;
+    border-radius: 20px;
+    padding: 25px;
+    
+}
+#icono-fondo{
+    display: flex;
+    margin: auto;
+    font-size: 100px;
+}
+#icono-fondo i{
+    border-radius: 50% 50%;
+    background-color: #c3eba7  ;
+    margin: auto;
+}
+
+.respuesta #texto-respuesta{
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.respuesta-contenido a{
+    display: block;
+    width: 90px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(254, 76, 80);
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.respuesta-contenido a:hover{
+    background-color:#fe8b8b ;
+    cursor: pointer;
+}
+
+.respuesta-contenido #regresar span{
+    font-family: "Poppins";
+    font-size: 25px;
+    color: white;
+}
+
+
+#mostrar{
+    display: flex;
+}
+
+.fondo-formulario form p:not(#redireccionar){
+    display: none;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 20px;
+    /*color:  rgb(254, 76, 80);*/
+    color: white;
+   /* color:  rgb(247, 38, 13);*/
+    
+}
+.fondo-formulario form p#incorrecto{
+    display: block;
+    
+}
+
+
+#redireccionar{
+    display: block;
+    margin-top: 35px;
+    text-align: center;
+    font-family: "Poppins";
+    color: white;
+    margin-left: 30px;
+    font-size: 18px;
+    padding: 15px;
+    /*text-decoration: none;*/
+}
+#registrar{
+    color:  #0ba0fa ;
+    text-decoration: underline;
+}
