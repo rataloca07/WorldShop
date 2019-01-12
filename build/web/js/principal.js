@@ -40,7 +40,7 @@ function categoria(cat){
 
 function contador(){
     var ahora = new Date();
-    var evento = new Date("2018-12-25");
+    var evento = new Date("2019-01-06");
     
     var tiempoActual = ahora.getTime();
     var tiempoEvento = evento.getTime();
@@ -61,6 +61,7 @@ function contador(){
     s = (s<10)? "0" + s:s;
     
     /*textContent tambien retorna los display none*/
+    if(fecha[0].textContent.valueOf()+fecha[1].textContent.valueOf()+fecha[2].textContent.valueOf() +fecha[3].textContent.valueOf()>=0){   
     fecha[0].textContent =d;
     fecha[1].textContent =h;
     fecha[2].textContent =m;
@@ -71,6 +72,14 @@ function contador(){
     fecha[3].innerText =s;*/
     
     setTimeout(contador,1000);
+}
+
+else{
+    fecha[0].textContent =0;
+    fecha[1].textContent =0;
+    fecha[2].textContent =0;
+    fecha[3].textContent =0;
+}
     
 }
 

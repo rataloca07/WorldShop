@@ -50,10 +50,10 @@
                     <span>Cantidad: </span>
                     <input type="number" id="cantidad-producto" min="1">
                 </p>
-                <button href="${pageContext.request.contextPath}/index.jsp" id="regresar" class="fas fa-times-circle">
+                <button id="regresar" class="fas fa-times-circle">
                     <span>Cancelar</span>
                 </button>
-                <button href="${pageContext.request.contextPath}/index.jsp" id="guardar" class="fas fa-save">
+                <button  id="guardar" class="fas fa-save">
                     <span>Guardar</span>
                 </button>
 
@@ -63,20 +63,20 @@
 
         <header id="logo-principal">
             <div id="logo" >
-                <a class="menus-principal" href="${pageContext.request.contextPath}/index.jsp">
+                <a class="menus-principal" href="${pageContext.request.contextPath}/vista/inicio.jsp">
                     WORLD<span>SHOP</span></a>
             </div>
             <div id="menu-principal">
                 <ul>
-                    <li><a class="menus-principal" href="${pageContext.request.contextPath}/index.jsp">INICIO</a></li>
-                    <li><a class="menus-principal" href="vista/promociones.jsp">PROMOCIONES</a></li>
-                    <li><a class="menus-principal" href="vista/comprar.jsp">COMPRAR</a></li>
-                    <li class="no${sesion_activa}"><a class="menus-principal" href="vista/login.jsp">LOGIN</a></li>
-                    <li class="no${sesion_activa}"><a class="menus-principal" href="vista/registro.jsp">REGISTRO</a></li>
-                    <li class="a${sesion_activa}"><a class="menus-principal" href="vista/carrito.jsp"><i class="fas fa-shopping-cart"><span> Carrito</span></i></a></li>
+                    <li><a class="menus-principal" href="${pageContext.request.contextPath}/vista/inicio.jsp">INICIO</a></li>
+                    <li><a class="menus-principal" href="${pageContext.request.contextPath}/vista/promociones.jsp">PROMOCIONES</a></li>
+                    <li><a class="menus-principal" href="${pageContext.request.contextPath}/vista/comprar.jsp">COMPRAR</a></li>
+                    <li class="no${sesion_activa}"><a class="menus-principal" href="${pageContext.request.contextPath}/vista/login.jsp">LOGIN</a></li>
+                    <li class="no${sesion_activa}"><a class="menus-principal" href="${pageContext.request.contextPath}/vista/registro.jsp">REGISTRO</a></li>
+                    <li class="a${sesion_activa}"><a class="menus-principal" href="${pageContext.request.contextPath}/vista/carrito.jsp"><i class="fas fa-shopping-cart"><span> Carrito</span></i></a></li>
                     <li class="a${sesion_activa}" ><a  class="menus-principal" href="${pageContext.request.contextPath}/ControladorInicio">USUARIO: <span>${nombreusuario}</span></a>
                         <ul>
-                            <li><a class="menus-principal" href="${pageContext.request.contextPath}/ControladorInicio?sesion=cerrar">Cerrar sesión</a></li>
+                            <li><a class="menus-principal" href="${pageContext.request.contextPath}/ControladorInicio?accion=cerrar_sesion">Cerrar sesión</a></li>
                         </ul>
                     </li>
                     <!-- <li><a class="menus-principal" href="vista/proveedores.jsp">PROVEEDORES</a></li>-->

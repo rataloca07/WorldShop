@@ -27,12 +27,12 @@
     <body>
         <header id="logo-principal">
             <div id="logo" >
-                <a class="menus-principal" href="${pageContext.request.contextPath}/index.jsp">
+                <a class="menus-principal" href="${pageContext.request.contextPath}/ControladorInicio?accion=redireccionar">
                     WORLD<span>SHOP</span></a>
             </div>
             <div id="menu-principal">
                 <ul>
-                    <li><a class="menus-principal" href="${pageContext.request.contextPath}/index.jsp">INICIO</a></li>
+                    <li><a class="menus-principal" href="${pageContext.request.contextPath}/ControladorInicio?accion=redireccionar">INICIO</a></li>
                     <li><a class="menus-principal" href="vista/promociones.jsp">PROMOCIONES</a></li>
                     <li><a class="menus-principal" href="vista/comprar.jsp">COMPRAR</a></li>
                     <li class="no${sesion_activa}"><a class="menus-principal" href="vista/login.jsp">LOGIN</a></li>
@@ -67,7 +67,7 @@
                                 <input name="cantidad" value="1" type="number" min="1">
                             </div>
                             <button id="enviar"  type="submit" class="fas fa-cart-plus"><span>  Agregar</span></button>
-                            <a href="${pageContext.request.contextPath}/index.jsp" id="regresar" class="fas fa-arrow-circle-left"><span>  Regresar</span></a>
+                            <a href="${pageContext.request.contextPath}/vista/inicio.jsp" id="regresar" class="fas fa-arrow-circle-left"><span>  Regresar</span></a>
                         </form>
                     </div>
                    </div>

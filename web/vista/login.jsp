@@ -32,7 +32,7 @@
                 <div id="texto-respuesta">
                     ${contenido_mensaje}
                 </div>
-                <a href="${pageContext.request.contextPath}/index.jsp" id="regresar" class="fas fa-arrow-circle-left">
+                <a href="${pageContext.request.contextPath}/ControladorInicio?accion=redireccionar" id="regresar" class="fas fa-arrow-circle-left">
                     <span>Listo</span>
                 </a>
                
@@ -52,7 +52,7 @@
                     <input class="campo" type="password" name="clave" placeholder="Contraseña" required>
                     <div id="contenedor-botones">
                         <button id="enviar"  type="submit" class="fas fa-door-open"><span>  Entrar</span></button>
-                        <a href="${pageContext.request.contextPath}/index.jsp" id="regresar" class="fas fa-arrow-circle-left"><span>  Regresar</span></a>
+                        <a href="${pageContext.request.contextPath}/ControladorInicio?accion=redireccionar" id="regresar" class="fas fa-arrow-circle-left"><span>  Regresar</span></a>
                     </div>
                     
                     <p id="redireccionar">No tienes una cuenta?   <a href="${pageContext.request.contextPath}/vista/registro.jsp" id="registrar">Registrar</a></p>

@@ -17,18 +17,22 @@ public class Usuario {
     private String rol;
     private String correo;
     private String clave;
+    private String imagen;
+
+    
     
     public Usuario(){
         
     }
 
-    public Usuario(int idusuario, String nombre, String apellido, String rol, String correo, String clave) {
+    public Usuario(int idusuario, String nombre, String apellido, String rol, String correo, String clave, String imagen) {
         this.idusuario = idusuario;
         this.nombre = nombre;
         this.apellido = apellido;
         this.rol = rol;
         this.correo = correo;
         this.clave = clave;
+        this.imagen = imagen;
     }
 
     public int getIdusuario() {
@@ -77,6 +81,14 @@ public class Usuario {
 
     public void setClave(String clave) {
         this.clave = clave;
+    }
+    
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 
 }

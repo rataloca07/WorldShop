@@ -123,6 +123,48 @@ transition-property: color;
     box-sizing: border-box;
 
 }
+
+/*Imagen usuario*/
+#menu-principal > ul #usuario-imagen{
+    margin-top: 0px;
+    padding: 0px;
+    width: 70px;
+    height: 70px;
+    /*overflow: visible;*/
+}
+
+
+#menu-principal > ul li div{
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50%;
+    background-color: white;
+    color:#1d1d1d ;
+   font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+#menu-principal > ul li div .fondo-imagen-usuario{
+    margin-left: auto;
+    margin-right: auto;
+    /*border-radius: 15px;*/
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/*-----------*/
+
+
+
+
 #menu-principal ul li ul li{
     width: 100%;
 }
@@ -204,6 +246,9 @@ en el menu de navegacion*/
 
 #menu-principal > ul li.nosesion{
     display: none;
+}
+#usuario-imagen{
+    
 }
 
 

@@ -32,7 +32,7 @@
                 <div id="texto-respuesta">
                     Registrado!
                 </div>
-                <a href="${pageContext.request.contextPath}/index.jsp" id="regresar" class="fas fa-arrow-circle-left">
+                <a href="${pageContext.request.contextPath}/ControladorInicio?accion=redireccionar" id="regresar" class="fas fa-arrow-circle-left">
                     <span>Listo</span>
                 </a>
             </div>
@@ -54,7 +54,7 @@
                     <input class="campo" type="password" name="clave-repeat" placeholder="Repetir contraseña" required>
                     <div id="contenedor-botones">
                         <button id="enviar"  type="submit" class="fas fa-save"><span>  Registrar</span></button>
-                        <a href="${pageContext.request.contextPath}/index.jsp" id="regresar" class="fas fa-arrow-circle-left"><span>  Regresar</span></a>
+                        <a href="${pageContext.request.contextPath}/ControladorInicio?accion=redireccionar" id="regresar" class="fas fa-arrow-circle-left"><span>  Regresar</span></a>
                     </div>
                     <p id="redireccionar">Ya tienes una cuenta?   <a href="${pageContext.request.contextPath}/vista/login.jsp" id="registrar">Loguearse</a></p>
                     <!-- <input type="hidden" name="rol" value="usuario">-->

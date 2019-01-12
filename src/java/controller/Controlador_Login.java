@@ -50,8 +50,12 @@ public class Controlador_Login extends HttpServlet {
          usuario = UsuarioDB.buscarUsuario(correo, clave);
          if(usuario!=null){
              int idcarrito = CarritoDB.buscarIdCarrito(usuario.getIdusuario());
+             
              HttpSession session = request.getSession();
             session.setAttribute("idusuario", usuario);
+            session.setAttribute("imagen_usuario", usuario.getImagen());
+             System.out.println("Imagen del Usuario: "+usuario.getImagen());
+            session.setAttribute("codigousuario", usuario.getIdusuario());
             session.setAttribute("codigocarrito", idcarrito);
             session.setAttribute("nombreusuario", usuario.getNombre());
             session.setAttribute("sesion_activa", "sesion");

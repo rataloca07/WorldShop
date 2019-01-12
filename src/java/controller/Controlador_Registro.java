@@ -49,11 +49,8 @@ public class Controlador_Registro extends HttpServlet {
         if (clave.equals(clave2)) {
             if (UsuarioDB.buscarUsuarioCorreo(correo)==false) {
                 System.out.println("entro de todas formas");
-                /* HttpSession session = request.getSession();
-          session.setAttribute("idusuario", usuario);*/
- /* contenido_mensaje = "Bienvenido: "+usuario.getNombre();*/
                 request.setAttribute("mensaje", "mostrar");
-                Usuario usuario = new Usuario(1, nombre, apellido, "usuario", correo, clave);
+                Usuario usuario = new Usuario(1, nombre, apellido, "usuario", correo, clave, "https://firebasestorage.googleapis.com/v0/b/worldshop-7d480.appspot.com/o/usuario%2Fuser-generic.png?alt=media&token=61ee3bda-1d0a-4fd6-acfe-bd1c18a0d482");
                 UsuarioDB.registrarUsuario(usuario);
                 int idusuario = UsuarioDB.buscarIdUsuario(correo, clave);
                 CarritoDB.registrarCarrito(idusuario);
@@ -66,6 +63,7 @@ public class Controlador_Registro extends HttpServlet {
                 session.setAttribute("codigousuario", idusuario);
                 session.setAttribute("codigocarrito", idcarrito);
                 session.setAttribute("nombreusuario", usuario.getNombre());
+                session.setAttribute("imagen_usuario", usuario.getImagen());
                 session.setAttribute("sesion_activa", "sesion");
                 session.setAttribute("boton_carrito", "agregar");
 

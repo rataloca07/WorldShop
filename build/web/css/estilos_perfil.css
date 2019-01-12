@@ -1,0 +1,327 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/01/2019, 06:12:05 PM
+    Author     : anthony
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #1d1d1d ;
+}
+@font-face {
+    font-family: 'poppy';
+    src: url('https://fonts.googleapis.com/css?family=Poppins');
+}
+
+header section aside footer article{
+    display: block;
+}
+
+section{
+    overflow: hidden;
+}
+
+
+
+header{
+    width: 100%;
+    align-content: center;
+    height: 100px;
+    background-color: white;
+    font-family: Poppins, sans-serif;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 15px #e1e1e1;  
+    
+}
+.menus-principal{
+     text-decoration: none;
+     list-style: none;
+}
+
+#logo{
+    width: 15%;
+   display: block;
+    float: left;
+    /*margin-right:50px;*/
+    margin-left: 10%;
+    margin-top: 30px ;
+    font-size: 24px;
+    font-weight: 900;
+  
+} 
+#logo a{
+    color:#1d1d1d ;
+    font-weight: bold;
+}
+#logo a span{
+    color: #f23e35 ;
+    font-weight: bold;
+  
+}
+
+/*#menu-principal{
+   float: left;
+    margin-top: 40px ;
+    margin-left: 120px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+}
+#menu-principal ul li{
+    display: inline ;
+    margin: auto 20px;
+    
+    
+}
+
+.menus-principal{
+    margin-top: 30px;
+}
+.menus-principal:hover{
+    color:  #8d8d8d ;
+    transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: color;
+}*/
+
+#menu-principal{
+
+   width: 75%;
+   font-family: "Poppins", sans-serif;
+    float: left;
+    margin-top: 30px ;
+   /* margin-left: 15%;*/
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+
+}
+
+
+#menu-principal ul {
+    list-style: none;
+    background-color: white;
+    /*text-align: center;*/
+    margin: 0 auto;
+    display: table;
+
+}
+
+
+#menu-principal > ul li a{
+    background-color: white;
+    color:#1d1d1d ;
+   font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+/*Imagen usuario*/
+#menu-principal > ul #usuario-imagen{
+    margin-top: 0px;
+    padding: 0px;
+    width: 70px;
+    height: 70px;
+    /*overflow: visible;*/
+}
+
+
+#menu-principal > ul li div{
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50%;
+    background-color: white;
+    color:#1d1d1d ;
+   font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+#menu-principal > ul li div .fondo-imagen-usuario{
+    margin-left: auto;
+    margin-right: auto;
+    /*border-radius: 15px;*/
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/*-----------*/
+
+
+
+
+#menu-principal ul li ul li{
+    width: 100%;
+}
+#menu-principal ul li ul li:nth-child('last'){
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#menu-principal ul >li {
+   display: inline ;
+    margin: auto;
+    float: left;
+}
+
+#menu-principal ul >li:hover >a {
+   color:  #8d8d8d ;
+    transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: color;
+}
+
+#menu-principal ul li ul li a{
+width: 100%;
+    text-align: center;
+    border-top: solid 1px #dadada ;
+    box-sizing: border-box;
+}
+
+#menu-principal ul li ul li a:hover{
+    border-top: solid 1px #dadada ;
+    box-sizing: border-box;
+    /*box-shadow: rgb(150,150,150) 5px 5px 10px inset;*/
+    box-shadow: #dadada 1px 1px 12px inset;
+}
+
+
+
+#menu-principal li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+#menu-principal ul li:hover>ul{
+    display: block;
+}
+
+/*Esto hace desaparecer opciones
+en el menu de navegacion*/
+#menu-principal > ul li.a{
+    display: none;
+}
+
+#menu-principal > ul li.asesion > a span{
+    color:rgb(254, 76, 80);
+    font-size: 14px;
+}
+
+#menu-principal > ul li.asesion > a i{
+    color:rgb(254, 76, 80);
+    font-size: 14px;
+}
+
+#menu-principal > ul li.asesion > a i span{
+    color:rgb(254, 76, 80);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#menu-principal > ul li.asesion > a i:hover{
+    color:#f99181;
+}
+
+#menu-principal > ul li.asesion > a i:hover span{
+    color:#f99181;
+}
+
+
+#menu-principal > ul li.nosesion{
+    display: none;
+}
+#usuario-imagen{
+    
+}
+
+
+
+.imagen{
+    /*display: none;*/
+    width: 350px;
+    height: 350px;
+}
+.imagen .foto{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+
+footer{
+    overflow: hidden;
+    
+    
+}
+#footer-contenedor{
+    background-color: black;
+    height: 260px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color:  white ;
+    overflow: hidden;
+}
+
+.footer-enlaces a{
+    text-decoration: none;
+    color:#51545f;
+}
+#derechos p{
+    color:#51545f;
+}
+#footer-izq, #footer-der{
+    float: left;
+}
+#footer-izq{
+    width: 31%;
+    margin-left: 9%;
+    margin-top: 55px;
+
+}
+#contacto{
+        margin-bottom: 50px;
+}
+.footer-enlaces a{
+
+    margin-right: 30px;
+}
+#footer-der{
+    width: 60%;
+    overflow: hidden;
+}
+#redes{
+    display: block;
+    margin-top: 55px;
+    
+    margin-left: 60%;
+}
+.footer-enlaces a:hover i,#contacto a:hover{
+    cursor: pointer;
+    color: #fe4c50;
+}
+.footer-enlaces a i{
+    height: 35px;
+    color:#51545f;
+
+}
+
