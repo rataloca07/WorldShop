@@ -82,9 +82,7 @@ public class Controlador_Carrito extends HttpServlet {
         int codCarrito = (Integer) session.getAttribute("codigocarrito");
         int cantidad = Integer.parseInt(request.getParameter("cantidad"));
 
-        /*ArrayList<Producto> listaprod =*/
- /*session.setAttribute("carrito", detallecarrito);*/
- /*DetalleCarrito detalle = new DetalleCarrito(codCarrito, codProducto,cantidad );*/
+
         CarritoDB.registrarDetalleCarrito(codCarrito, codProducto, cantidad);
         ArrayList<DetalleCarrito> detalle = CarritoDB.listarDetalleCarrito(codCarrito);
         session.setAttribute("detallecarrito", detalle);

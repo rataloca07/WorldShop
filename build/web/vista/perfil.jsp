@@ -21,6 +21,7 @@
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       
 
 
@@ -107,9 +108,10 @@
             </div>
         </footer>
         
-         <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
-         <!--  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>-->
-          <script src="${pageContext.request.contextPath}/js/firebase.js"> </script>
+         <!--<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+         
+          <!--<script src="${pageContext.request.contextPath}/js/firebase.js"> </script>-->
+          <script src="${pageContext.request.contextPath}/js/imgur.js"> </script>
       
     </body>
 </html>
